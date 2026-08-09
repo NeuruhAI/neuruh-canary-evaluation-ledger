@@ -1,0 +1,1 @@
+Public: generic canary ledger, metric comparisons, incidents, deterministic verdict, verifier/CLI. Private: real rollout policy, traffic routing, production metrics, customer data, thresholds, deployment topology.

@@ -1,0 +1,41 @@
+{
+  "artifact": "canary-evaluation-ledger",
+  "limitations": [
+    "Evidence-only public trust primitive; no deployment or rollback execution authority.",
+    "No identity attestation or cryptographic signatures.",
+    "Production rollout metrics, thresholds and rollback commands remain private."
+  ],
+  "maturity": "ACTIVE_ALPHA",
+  "package_version": "0.1.0a0",
+  "public_boundary": {
+    "customer_data": false,
+    "domain_recipes": false,
+    "private_connectors": false,
+    "private_memory": false,
+    "private_policies": false,
+    "production_authority_topology": false,
+    "production_routing": false,
+    "production_runtime": false,
+    "proprietary_scoring": false
+  },
+  "qualification": {
+    "cli_smoke": "PENDING",
+    "git_history_gitleaks": "PENDING",
+    "license": "Apache-2.0",
+    "private_implementation_reference_scan": "PENDING",
+    "source_secret_pattern_scan": "PENDING",
+    "synthetic_end_to_end": "PENDING",
+    "synthetic_examples_only": true,
+    "tests": {
+      "count": 0,
+      "status": "PENDING"
+    },
+    "wheel_build": "PENDING"
+  },
+  "qualified_at": null,
+  "release_version": "v0.1.0-alpha",
+  "repository": "NeuruhAI/neuruh-canary-evaluation-ledger",
+  "schema_version": "neuruh.public-release-receipt.v1",
+  "status": "QUALIFIED_FOR_PRIVATE_STAGING",
+  "tested_source_commit": null
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "ledger_id",
+    "evaluation_id",
+    "sequence",
+    "proposal_digest",
+    "promotion_digest",
+    "candidate_artifact_digest",
+    "baseline_artifact_digest",
+    "stage",
+    "exposure_fraction",
+    "sample_count",
+    "started_at",
+    "ended_at",
+    "metrics",
+    "incident_ids",
+    "critical_incident_count",
+    "verdict",
+    "previous_entry_hash",
+    "entry_hash",
+    "deployment_authority"
+  ],
+  "title": "Neuruh Canary Evaluation v0.1",
+  "type": "object"
+}
