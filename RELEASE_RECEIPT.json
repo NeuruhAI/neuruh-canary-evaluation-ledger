@@ -19,23 +19,23 @@
     "proprietary_scoring": false
   },
   "qualification": {
-    "cli_smoke": "PENDING",
-    "git_history_gitleaks": "PENDING",
+    "cli_smoke": "PASS",
+    "git_history_gitleaks": "PASS",
     "license": "Apache-2.0",
-    "private_implementation_reference_scan": "PENDING",
-    "source_secret_pattern_scan": "PENDING",
-    "synthetic_end_to_end": "PENDING",
+    "private_implementation_reference_scan": "PASS",
+    "source_secret_pattern_scan": "PASS",
+    "synthetic_end_to_end": "PASS",
     "synthetic_examples_only": true,
     "tests": {
-      "count": 0,
-      "status": "PENDING"
+      "count": 56,
+      "status": "PASS"
     },
-    "wheel_build": "PENDING"
+    "wheel_build": "PASS"
   },
-  "qualified_at": null,
+  "qualified_at": "2026-08-09T20:35:31.259069+00:00",
   "release_version": "v0.1.0-alpha",
   "repository": "NeuruhAI/neuruh-canary-evaluation-ledger",
   "schema_version": "neuruh.public-release-receipt.v1",
-  "status": "QUALIFIED_FOR_PRIVATE_STAGING",
-  "tested_source_commit": null
+  "status": "APPROVED_FOR_PUBLIC_RELEASE",
+  "tested_source_commit": "0cd1912107565d0d4122087e31b5195e024d02f0"
 }
