@@ -1,41 +1,46 @@
 {
+  "schema_version": "neuruh.public-release-receipt.v1",
+  "repository": "NeuruhAI/neuruh-canary-evaluation-ledger",
   "artifact": "canary-evaluation-ledger",
-  "limitations": [
-    "Evidence-only public trust primitive; no deployment or rollback execution authority.",
-    "No identity attestation or cryptographic signatures.",
-    "Production rollout metrics, thresholds and rollback commands remain private."
-  ],
-  "maturity": "ACTIVE_ALPHA",
-  "package_version": "0.1.0a0",
+  "release_version": "v0.1.1-alpha",
+  "package_version": "0.1.1a0",
+  "status": "APPROVED_FOR_PUBLIC_RELEASE",
+  "qualified_at": "2026-08-20T06:51:36.853005+00:00",
+  "tested_source_commit": "PENDING_COMMIT",
+  "qualification": {
+    "tests": {
+      "status": "PASS",
+      "count": 56,
+      "command": "python -m unittest discover -s tests -v"
+    },
+    "secret_scan": "PASS",
+    "history_secret_scan": "PASS",
+    "private_reference_scan": "PASS",
+    "clean_environment_install": "PASS",
+    "cli_smoke": "PASS",
+    "cli_error_handling": "PASS",
+    "documented_output_reproduced": "PASS",
+    "license": "Apache-2.0",
+    "license_text_complete": true,
+    "synthetic_examples_only": true,
+    "standalone_clean_history": true,
+    "continuous_integration": "github-actions/.github/workflows/ci.yml"
+  },
   "public_boundary": {
-    "customer_data": false,
-    "domain_recipes": false,
-    "private_connectors": false,
-    "private_memory": false,
+    "production_runtime": false,
+    "production_routing": false,
     "private_policies": false,
     "production_authority_topology": false,
-    "production_routing": false,
-    "production_runtime": false,
-    "proprietary_scoring": false
+    "customer_data": false,
+    "private_memory": false,
+    "proprietary_scoring": false,
+    "domain_recipes": false,
+    "private_connectors": false
   },
-  "qualification": {
-    "cli_smoke": "PASS",
-    "git_history_gitleaks": "PASS",
-    "license": "Apache-2.0",
-    "private_implementation_reference_scan": "PASS",
-    "source_secret_pattern_scan": "PASS",
-    "synthetic_end_to_end": "PASS",
-    "synthetic_examples_only": true,
-    "tests": {
-      "count": 56,
-      "status": "PASS"
-    },
-    "wheel_build": "PASS"
-  },
-  "qualified_at": "2026-08-09T20:35:31.259069+00:00",
-  "release_version": "v0.1.0-alpha",
-  "repository": "NeuruhAI/neuruh-canary-evaluation-ledger",
-  "schema_version": "neuruh.public-release-receipt.v1",
-  "status": "APPROVED_FOR_PUBLIC_RELEASE",
-  "tested_source_commit": "0cd1912107565d0d4122087e31b5195e024d02f0"
+  "maturity": "ACTIVE_ALPHA",
+  "limitations": [
+    "This is a bounded public extraction, not the Neuruh production runtime.",
+    "Passing validation does not itself grant production authority.",
+    "Interfaces and behavior may change during alpha development."
+  ]
 }

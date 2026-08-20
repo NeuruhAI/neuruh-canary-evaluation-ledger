@@ -1,7 +1,34 @@
+from importlib.metadata import PackageNotFoundError, version as _metadata_version
+
 from .core import (
-    SCHEMA_VERSION, CanaryValidationError, MetricObservation, CanaryEvaluation,
-    CanaryLedger, evaluate_canary, verify_ledger, canonical_json, sha256_ref,
+    DIRECTIONS,
+    SCHEMA_VERSION,
+    VERDICTS,
+    CanaryEvaluation,
+    CanaryLedger,
+    CanaryValidationError,
+    MetricObservation,
+    canonical_json,
+    evaluate_canary,
+    sha256_ref,
+    verify_ledger,
 )
-__version__="0.1.0a0"
-__all__=["SCHEMA_VERSION","CanaryValidationError","MetricObservation","CanaryEvaluation",
-"CanaryLedger","evaluate_canary","verify_ledger","canonical_json","sha256_ref"]
+
+__all__ = [
+    "DIRECTIONS",
+    "SCHEMA_VERSION",
+    "VERDICTS",
+    "CanaryEvaluation",
+    "CanaryLedger",
+    "CanaryValidationError",
+    "MetricObservation",
+    "canonical_json",
+    "evaluate_canary",
+    "sha256_ref",
+    "verify_ledger",
+]
+
+try:
+    __version__ = _metadata_version("neuruh-canary-evaluation-ledger")
+except PackageNotFoundError:  # running from a source tree that was never installed
+    __version__ = "unknown"
