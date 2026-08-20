@@ -1,5 +1,7 @@
 # Neuruh Canary Evaluation Ledger
 
+[![ci](https://github.com/NeuruhAI/neuruh-canary-evaluation-ledger/actions/workflows/ci.yml/badge.svg)](https://github.com/NeuruhAI/neuruh-canary-evaluation-ledger/actions/workflows/ci.yml)
+
 Public Commons Release 021. An append-only, tamper-evident ledger for canary evaluation evidence.
 
 Each entry binds the exact proposal, Promotion Gate decision, candidate and baseline artifact digests, exposure, sample count, metrics, incidents and deterministic PASS / HOLD / ROLLBACK verdict.
